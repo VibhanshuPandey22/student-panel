@@ -21,9 +21,7 @@ export default function StudentDetail({
   useEffect(() => {
     async function fetchStudent() {
       try {
-        const response = await axios.get(
-          `http://localhost:3000/api/posts/${id}`
-        );
+        const response = await axios.get(`/api/posts/${id}`);
         if (response.data.success) {
           setStudent(response.data.data);
         } else {

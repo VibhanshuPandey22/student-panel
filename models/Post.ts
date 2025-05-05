@@ -67,6 +67,10 @@ const postSchema: Schema<IPost> = new mongoose.Schema(
       ],
       required: [true, "Talent media is required"], // Entire array is required
     },
+    likes: {
+      type: Number,
+      default: 0,
+    },
   },
   {
     timestamps: true,

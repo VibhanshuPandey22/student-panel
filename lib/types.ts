@@ -42,6 +42,7 @@ export interface IPost extends Document {
     public_id: string;
     secure_url: string;
   }[];
+  likes: Number;
   createdAt: Date;
   updatedAt: Date;
 }
